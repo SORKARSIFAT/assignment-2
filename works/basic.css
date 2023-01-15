@@ -222,3 +222,108 @@ ul li:hover a {
     color: var(--color-white);
 }
 
+                    /* facts section styles start here */
+
+.facts-section {
+    margin: var(--common-margin);
+    margin-top: 130px;
+}
+.fact_heading {
+    margin-bottom: 100px;
+    max-width: 568px;
+}
+.fact_heading_title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    margin-bottom: 24px;
+}
+.fact_heading_description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--secondary-color);
+}
+
+.fact_info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 124px;
+    margin: 0 50px;
+}
+
+.fact_info_cart {
+    text-align: center;
+    padding: 45px 40px 60px;
+    border: 1px solid var(--teriary-color);
+}
+.fact_info_cart:hover {
+    background-color: var(--teriary-color);
+    color: var(--color-white);
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
+}
+.fact_info_cart:hover .fact_info_cart_title, .fact_info_cart_description{
+    color: var(--color-white);
+}
+.fact_info_cart img {
+    width: 100%;
+    max-width: 45px;
+}
+.fact_info_cart_title {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 53px;
+}
+.fact_info_cart_description {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--secondary-color);
+}
+
+/* 
+                    sponsors section style start here */
+
+.sponsors-section {
+    margin: var(--common-margin);
+    margin-top: 130px;
+}
+.sponsor_heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.sponsor_heading_title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    margin-bottom: 24px;
+}
+.sponsor_heading_description {
+    color: var(--secondary-color);
+    max-width: 568px;
+    text-align: center;
+}
+.sponsors {
+    display: flex;
+    justify-content: space-between;
+}
+.sponsors img {
+    height: 100%;
+    max-height: 50px;
+    filter: hue-rotate(45deg) saturate(5%) brightness(0.5);
+}
+
+
+
+
+                    /* footer section */
+
+.footer {
+    background: var(--bg-primary);
+    padding: 40px 0;
+    margin: var(--common-margin);
+    margin-top: 130px;
+    text-align: center;
+}
