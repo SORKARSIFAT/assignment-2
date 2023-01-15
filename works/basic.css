@@ -321,9 +321,11 @@ ul li:hover a {
                     /* footer section */
 
 .footer {
+    text-align: center;
     background: var(--bg-primary);
     padding: 40px 0;
     margin: var(--common-margin);
     margin-top: 130px;
-    text-align: center;
+    margin-bottom: 30px;
+   
 }
