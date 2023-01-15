@@ -1,0 +1,224 @@
+/* google font work sans link down below */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+
+
+:root {
+    --primary-color: #131313;
+    --secondary-color: #727272;
+    --teriary-color: #FF900E;
+    --color-white: #ffffff;
+    --bg-primary: rgba(255, 144, 14, 0.1);
+    --font-primary: work sans;
+    --common-margin: 0 25px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-primary);
+    color: var(--primary-color);
+}
+.container {
+    width: 100%;
+    max-width: 1490px;
+    margin: 0 auto;
+}
+.btn-primary {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--color-white);
+    background: var(--teriary-color);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+
+                /* Header section style start here */
+
+.header-section {
+    background-color: var(--bg-primary);
+}
+
+/* nav css styles */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: var(--common-margin);
+    padding-top: 50px; 
+}
+.nav .logo {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+}
+ul {
+    display: flex;
+}
+.nav .menu {
+    display: none;
+}
+ul li {
+    list-style-type: none;
+}
+ul li a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #424242;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+ul li:hover a {
+    background-color: var(--teriary-color);
+    color: var(--color-white);
+}
+
+/* home css styles */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: var(--common-margin);
+    padding: 100px 0 45px 0;
+}
+.home-info {
+    text-align: center;
+    margin-bottom: 50px;
+    width: 100%;
+    max-width: 862px;
+}
+.home .banner {
+    width: 100%;
+    max-width: 1440px;
+}
+
+.home-info .title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    margin-bottom: 32px;
+}
+.home-info .description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 32px;
+    color: var(--secondary-color);
+}
+
+/* main section
+
+            team section css styles below  */
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    gap: 73px;
+    margin: var(--common-margin);
+    margin-top: 85px;
+}
+.team .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.team .info {
+    width: 100%;
+    max-width: 537px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.gallery img {
+    width: 100%;
+    height: 100%;
+    max-width: 342px;
+    max-height: 342px;
+}
+.info .info-title {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 53px;
+    margin-bottom: 24px;
+}
+.info .description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--secondary-color);
+    margin-bottom: 32px;
+}
+
+
+
+                        /* Features section styles */
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 145px;
+    margin: var(--common-margin);
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+
+.features img {
+    width: 100%;
+    height: 100%;
+    max-width: 708px;
+    height: 982px;
+}
+.feature-info {
+    margin-bottom: 30px;
+}
+.feature-info .feature-title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    margin-bottom: 24px;
+    padding-left: 21px;
+    border-left: 5px solid var(--teriary-color);
+} 
+.feature-info .feature-description, .feature_cart .feature_cart_description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--secondary-color);
+}
+.feature_cart {
+    padding: 30px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+
+}
+.feature_cart .feature_cart_title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 10px;
+}
+.btn-move {
+    display: inline-block;
+    position: relative;
+    left: 650px;
+    top: -282px;
+    text-align: center;
+    padding: 30px;
+}
+#year {
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 70px;
+}
+#experience {
+    color: var(--color-white);
+}
+
