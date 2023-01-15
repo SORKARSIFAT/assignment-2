@@ -1,5 +1,6 @@
-/* /media-query.css */
-
+/* 
+                        media query css styles below
+*/
 
 @media only screen and (max-width: 576px) {
     .nav .logo {
@@ -7,30 +8,33 @@
         font-size: 24px;
         line-height: 32px;
     }
-    .nav .collapse {
+    .nav .collapse, .nav:hover .menu {
         display: none;
     }
-    .nav .menu {
+    .nav .menu, .nav:hover .collapse {
         display: block;
     }
-    .nav:hover .collapse{
-        display: block;
+    .nav:hover .collapse li {
+        margin-bottom: 10px;
     }
-    .nav:hover .menu{
-        display: none;
-    }
-
     .home-info .title {
         font-size: 42px;
         line-height: 53px;
+        font-weight: 700;
     }
 
-    .team {
+    .info .info-title, .feature-info .feature-title, .fact_heading_title, .sponsor_heading_title, .contact-section h1 {
+        font-size: 32px;
+        line-height: 42px;
+        font-weight: 700;
+    }
+
+    .team-section {
         flex-direction: column-reverse;
         margin-top: 30px;
         align-items: center;
     }
-    .team .gallery {
+    .team-section .gallery {
         grid-template-columns: 1fr;
         align-items: center;
     }
@@ -39,24 +43,26 @@
         max-height: 242px;
     }
     .info .info-title { 
-        font-size: 36px;
-        line-height: 48px;
         margin-bottom: 18px;
     }
-    info .description {
+    .info .description {
         line-height: 22px;
         margin-bottom: 20px;
     }
-    .features {
+    .features-section {
         grid-template-columns: 1fr;
         gap: 45px;
-        margin-top: 85px;
+        margin-top: 65px;
         margin-bottom: 20px;
     }
-    .features img {
+    .features-section img {
         height: 90%;
     }
+    .feature_cart {
+        margin-bottom: 20px;
+    }
     .btn-move {
+        position: relative;
         left: 0;
         top: 0;
         margin: var(--common-margin);
@@ -71,8 +77,17 @@
     .facts-section {
         margin-top: 85px;
     }
-    .fact-info {
+    .fact_heading {
+        margin-bottom: 20px;
+    }
+    .fact_info {
         grid-template-columns: 1fr;
+        gap: 30px;
+        margin: 0;
+    }
+    .fact_info_cart_title {
+        font-size: 28px;
+        line-height: 52px;
     }
     .sponsors-section {
         margin-top: 85px;
@@ -80,7 +95,7 @@
     .sponsors {
         flex-direction: column;
         align-items: center;
-        gap: 30px;
+        gap: 40px;
     }
     .sponsors img {
         height: 100%;
@@ -89,6 +104,13 @@
     }
     .contact-section {
         margin-top: 85px;
+    }
+    .form-section {
+        flex-direction: column-reverse;
+        gap: 45px;
+    }
+    .form-section #contact {
+        margin-bottom: 25px;
     }
     
 }
